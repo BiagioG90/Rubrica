@@ -7,6 +7,8 @@ public class Rubrica {
 
 	private Map<String, Voce> voci = new TreeMap<String, Voce>();
 	private String b="Ciao";
+	
+	private double d=1.5;
 	private int a=0;
 	//primo metodo
 	//altro commento
