@@ -6,7 +6,7 @@ import java.util.TreeMap;
 public class Rubrica {
 
 	private Map<String, Voce> voci = new TreeMap<String, Voce>();
-	
+	//ciao
 	//primo metodo
 	//altro commento
 	//altro commento
@@ -20,4 +20,5 @@ public class Rubrica {
 		voci.put(nome + " " + cognome, v);
 		return v;
 	}
+	
 }
