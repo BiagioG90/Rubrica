@@ -6,7 +6,7 @@ import java.util.TreeMap;
 public class Rubrica {
 
 	private Map<String, Voce> voci = new TreeMap<String, Voce>();
-    private String b="Aiuto";
+    private String b="Aiuto!";
 
 	private double d=1.5;
 	private int a=0;
