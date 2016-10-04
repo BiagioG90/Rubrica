@@ -23,4 +23,5 @@ public class Rubrica {
 		voci.put(nome + " " + cognome, v);
 		return v;
 	}
+	
 }
