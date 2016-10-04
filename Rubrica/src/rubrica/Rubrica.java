@@ -1,5 +1,7 @@
 package rubrica;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -63,6 +65,18 @@ public class Rubrica {
 		
 	}
 	
+	public List<Voce> getTutteVoci(){
+		
+		List<Voce> listaVoci= new ArrayList<Voce>(voci.values());
+		return listaVoci;
+	}
 	
+	public Voce aggiornaVoce(String nome, String cognome, String tel){
+		return null;
+	}
+	
+	public Voce cancellaVoce(String nome, String cognome){
+		return null;
+	}
 
 }
