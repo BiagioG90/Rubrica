@@ -71,8 +71,13 @@ public class Rubrica {
 		return listaVoci;
 	}
 	
-	public Voce aggiornaVoce(String nome, String cognome, String tel){
-		return null;
+	public Voce aggiornaVoce(String nome, String cognome, String tel)throws UtenteNonEsiste{
+		if(voci.containsKey(nome + " " + cognome)){
+			voci.get(nome + " " + cognome).setTelefono(tel);
+			return voci.get(nome + " " + cognome);
+		}else
+			throw new UtenteNonEsiste("");
+	
 	}
 	
 	public Voce cancellaVoce(String nome, String cognome){
