@@ -23,6 +23,8 @@ public class EsempioMain1 {
 		
 		r.cancellaVoce("Pippo", "Topolino");
 		
+		r.aggiornaVoce("Biagio", "Gallucci", "000000000");
+		
 		for(Voce v:r.getTutteVoci()){
 			System.out.println(v);
 		}
