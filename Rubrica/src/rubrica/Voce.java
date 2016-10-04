@@ -40,7 +40,9 @@ public class Voce {
 		this.telefono = telefono;
 	}
 	
-	
+	public String toString(){
+		return nome+" "+cognome+" "+telefono;
+	}
 	
 
 }

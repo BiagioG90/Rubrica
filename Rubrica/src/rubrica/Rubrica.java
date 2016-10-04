@@ -61,7 +61,7 @@ public class Rubrica {
 		if(voci.containsKey(nome+" "+cognome)){
 			return voci.get(nome+" "+cognome);
 		} else 
-			throw new UtenteNonEsiste("utentenon c'è in lista");
+			throw new UtenteNonEsiste("utente non c'è in lista");
 		
 	}
 	
@@ -80,8 +80,12 @@ public class Rubrica {
 	
 	}
 	
-	public Voce cancellaVoce(String nome, String cognome){
-		return null;
+	public Voce cancellaVoce(String nome, String cognome)throws UtenteNonEsiste{
+		if(voci.containsKey(nome+" "+cognome)){
+			voci.remove(nome+" "+cognome);
+			return voci.get(nome+" "+cognome);
+		} else throw new UtenteNonEsiste("non ho trovato la voce nella lista voci");
+		
 	}
 
 }
