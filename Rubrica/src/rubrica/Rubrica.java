@@ -54,9 +54,15 @@ public class Rubrica {
 		return v;
 	}
 	
-	public Voce getVoce(String nome, String cognome){
-		return null;
+	public Voce getVoce(String nome, String cognome) throws UtenteNonEsiste{
+		
+		if(voci.containsKey(nome+" "+cognome)){
+			return voci.get(nome+" "+cognome);
+		} else 
+			throw new UtenteNonEsiste("utentenon c'è in lista");
 		
 	}
+	
+	
 
 }
